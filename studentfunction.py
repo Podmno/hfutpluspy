@@ -244,7 +244,7 @@ def GetStudentExams(session_value,srvid_value):
     fo.write(result_text)
 
     fo.close()
-    print("🥰 考试日程已经输出至 Exams.ics")
+    print("考试日程已经输出至 Exams.ics")
     print("考试信息已归档于 examdata.json 中。")
 
     return result_text
@@ -302,7 +302,7 @@ def GetStudentClasses(session_value,srvid_value):
 
 
     semesterdic = {}
-    print("🤗 请选择要打印课表的学期代号：")
+    print("[!] 请选择要打印课表的学期代号：")
     for items in semester_repo:
 
         
@@ -391,7 +391,7 @@ def GetStudentClasses(session_value,srvid_value):
     
     hp.PrintCourse()
 
-    print("🥰 课表制作完成了，通过 Courses.ics 即可导入到各终端～")
+    print("课表制作完成，通过 Courses.ics 即可导入到各终端")
     
     return hp
 
@@ -406,7 +406,7 @@ def GenerateCourse():
 
     
 def DeleteStudentInfomation():
-    print("🤔 确定要删除信息吗？你将需要重新登录，目录下的个人信息文件也会被移除。")
+    print("[!] 确定要删除信息吗？你将需要重新登录，目录下的个人信息文件也会被移除。")
     print("n:取消 y:确定")
     
     choose = input()
@@ -423,7 +423,7 @@ def DeleteStudentInfomation():
         if os.path.exists("scoredata.json"):
             os.remove("scoredata.json")   
 
-        print("删除成功，重新启动程序后生效 😆")
+        print("删除成功，重新启动程序后生效。")
         sys.exit(0)
     else:
         
