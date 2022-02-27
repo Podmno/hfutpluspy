@@ -54,17 +54,17 @@ def userfun():
     print(backinfo)
 
     while(True):
-        print("选择选项：1、获取成绩 2、获取考试信息 3、获取课表信息 4、重置软件")
+        print("选择选项：1、制作课程日历文件 2、获取考试信息 3、获取成绩 4、重置软件")
         letter = input()
         if(letter=='1'):
             checknet()
-            studentfunction.GetStudentScore(backinfo['session'],backinfo['srvid'])
+            studentfunction.GetStudentClasses(backinfo['session'],backinfo['srvid'])
         if(letter=='2'):
             checknet()
             studentfunction.GetStudentExams(backinfo['session'],backinfo['srvid'])
         if(letter=='3'):
             checknet()
-            studentfunction.GetStudentClasses(backinfo['session'],backinfo['srvid'])
+            studentfunction.GetStudentScore(backinfo['session'],backinfo['srvid'])
         if(letter=='4'):
             studentfunction.DeleteStudentInfomation()
 
