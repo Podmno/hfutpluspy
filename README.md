@@ -1,6 +1,7 @@
 # 合工大课程日历助手
 
 将教务系统日历转换为 ICS 日历文件并导入至日历 APP，由 Python3 驱动。
+![Screenshot](screenshot.png)
 
 ## 使用须知
 1. 从命令行形式启动 `main.py` ，初次使用请按照 `requirements.txt` 安装依赖库（依赖 requests 库）。
