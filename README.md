@@ -1,5 +1,8 @@
 # 合工大课程日历助手
 
+[Windows 可执行文件下载](https://github.com/KiMNOtri/hfutpluspy/releases/download/release/hfutpluspy_win.exe)
+[源码下载](https://github.com/KiMNOtri/hfutpluspy/releases/download/release/hfutpluspyvfinal.zip)
+
 将教务系统日历转换为 ICS 日历文件并导入至日历 APP，由 Python3 驱动。
 ![Screenshot](screenshot.png)
 
