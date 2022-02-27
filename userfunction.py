@@ -26,6 +26,7 @@ def checknet():
 def userfun(): 
 
     print("正在测试与教务系统的连接，请稍后……")
+    print("[?] 长时间无响应？请尝试访问 http://jxglstu.hfut.edu.cn/eams5-student/login ，若打不开网页请尝试更换校园网或稍后再试。")
     checknet()
     
     backinfo = -1
