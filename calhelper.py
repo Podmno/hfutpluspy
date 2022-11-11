@@ -172,7 +172,7 @@ def CourseGenerater(id,name,location,teacher,begin,end,looptype):
     string += "SUMMARY:"+name+"\n"
     if(looptype!=-1):
         string += "RRULE:FREQ=WEEKLY;COUNT="+str(looptype)+"\n"
-    string += "ORGANIZER;CN=TRIStudio:mailto:tri.studio@outlook.com\n"
+    # string += "ORGANIZER;CN=TRIStudio:mailto:tri.studio@outlook.com\n"
     string += "DTSTART;TZID=Asia/Shanghai:"+begin+"\n"
     string += "DTEND;TZID=Asia/Shanghai:"+end+"\n"
     string += "UID:"+id+"\n"

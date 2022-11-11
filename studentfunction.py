@@ -215,7 +215,7 @@ def GetStudentExams(session_value,srvid_value):
     for i in back_result:
         writestring += "BEGIN:VEVENT\n"
         writestring += "SUMMARY:"+i['subject']+" 考试\n"
-        writestring += "ORGANIZER;CN=TRIStudio:mailto:tri.studio@outlook.com\n"
+        # writestring += "ORGANIZER;CN=TRIStudio:mailto:tri.studio@outlook.com\n"
         timezone = i['time'].split(' ')
         datestring = timezone[0].replace('-','')
         timestr = timezone[1].replace(':','')
